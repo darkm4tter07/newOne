@@ -1,11 +1,5 @@
-import requests
-
 def main():
-    response = requests.get('https://api.example.com')
-    if response.status_code == 200:
-        print('Success!')
-    else:
-        print('Error!')
+    print("Hello, World!")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
