@@ -5,7 +5,16 @@ def main():
     if response.status_code == 200:
         print('Success !!')
         data = response.json()
-        print(data)
+        for entry in data['entries']:
+            print('API:', entry['API'])
+            print('Description:', entry['Description'])
+            print('Auth:', entry['Auth'])
+            print('HTTPS:', entry['HTTPS'])
+            print('Cors:', entry['Cors'])
+            print('Link:', entry['Link'])
+            print('Category:', entry['Category'])
+            print('---')
+       
     else:
         print('Error !!')
 
